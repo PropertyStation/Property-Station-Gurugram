@@ -1,12 +1,5 @@
 
-import './App.css'
-import Page1 from './components/Page1'
-import Page2 from './components/Page2'
-import Page3 from './components/Page3'
-import Page4 from './components/Page4'
-import Page5 from './components/Page5'
-import Page7 from './components/Page7'
-import Page8 from './components/Page8'
+
 import HomePage from './pages/HomePage'
 
 function App() {
@@ -15,15 +8,43 @@ function App() {
   return (
     <>
       <HomePage />
-      <Page1/>
-      <Page2/>
-      <Page3/>
-      <Page4/>
-      <Page5/>
-      {/* <Page7/> */}
-      {/* <Page8/> */}
     </>
   )
 }
+// const Carousel = ({ data }) => {
+//   const [slide, setSlide] = useState(0);
+
+//   const nextSlide = () => {
+//     setSlide(slide === data.length - 1 ? 0 : slide + 1);
+//   };
+
+//   const prevSlide = () => {
+//     setSlide(slide === 0 ? data.length - 1 : slide - 1);
+//   };
+
+//   return (
+//     <div className="carousel">
+//       <BsArrowLeftCircleFill onClick={prevSlide} className="arrow arrow-left" />
+//       {data.map((item, idx) => (
+//         <img
+//           src={item.src}
+//           alt={item.alt}
+//           key={idx}
+//           className={slide === idx ? "slide" : "slide slide-hidden"}
+//         />
+//       ))}
+//       <BsArrowRightCircleFill onClick={nextSlide} className="arrow arrow-right" />
+//       <span className="indicators">
+//         {data.map((_, idx) => (
+//           <button
+//             key={idx}
+//             className={slide === idx ? "indicator" : "indicator indicator-inactive"}
+//             onClick={() => setSlide(idx)}
+//           ></button>
+//         ))}
+//       </span>
+//     </div>
+//   );
+// };
 
 export default App
